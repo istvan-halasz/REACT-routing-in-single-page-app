@@ -1,10 +1,8 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 
 import './Post.css';
 
 const post = (props) => {
-    console.log(props);
 
     return (
         <article className="Post" onClick={props.clicked}>
@@ -16,4 +14,4 @@ const post = (props) => {
     );
 };
 
-export default withRouter(post);
+export default post;
